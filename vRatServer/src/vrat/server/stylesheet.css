@@ -1,0 +1,26 @@
+.table-view .column-header, .table-view .filler{
+    -fx-font-size: 16px;
+    -fx-font-family: "Calibri";
+}
+
+@font-face {
+    font-family: "Calibri";
+    src: url("Calibri");
+}
+
+.text{
+    -fx-font-family: "Calibri";
+}
+
+.TableView{
+    -fx-font-size: 15px;
+}
+.TabPane{
+    -fx-font-size: 16px;
+}
+.Checkbox{
+	-fx-font-size: 18px;
+}
+.Label{
+	-fx-font-size: 16px;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="265.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vrat.server.contextFxml.WebBrowserController">
+   <children>
+      <TextField fx:id="website" focusTraversable="false" layoutX="28.0" layoutY="21.0" prefHeight="40.0" prefWidth="215.0" promptText="Website starting with: &quot;www&quot;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Enter the website you want the infected to view" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </TextField>
+      <TextField fx:id="howMany" focusTraversable="false" layoutX="25.0" layoutY="90.0" prefHeight="40.0" prefWidth="215.0" promptText="How many?">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Enter how many times you want the website opened in the standard webbrowser" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </TextField>
+      <TextField fx:id="delay" focusTraversable="false" layoutX="25.0" layoutY="155.0" prefHeight="40.0" prefWidth="215.0" promptText="Delay in seconds">
+         <font>
+            <Font name="Calibri" size="15.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Enter what delay you want the windows opened with - Enter 0 if you want them opened all at once" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </Tooltip>
+         </tooltip>
+      </TextField>
+      <Button fx:id="done" focusTraversable="false" layoutX="58.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleDone" prefHeight="40.0" prefWidth="150.0" text="Done">
+         <font>
+            <Font name="Calibri" size="17.0" />
+         </font></Button>
+      <Label focusTraversable="false" layoutY="270.0" prefHeight="40.0" prefWidth="132.0" text="Hint: Hover over items for more information" wrapText="true">
+         <font>
+            <Font name="Calibri" size="11.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
