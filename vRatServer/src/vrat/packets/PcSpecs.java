@@ -113,7 +113,7 @@ public class PcSpecs implements Serializable{
         
 		if (os.contains("Win")){
             try{
-                Process process = Runtime.getRuntime().exec(new String[] { "wmic", "bios", "get", "serialNumber" });
+                Process process = Runtime.getRuntime().exec(new String[] { "wmic", "diskdrive", "get", "serialnumber" });
                 process.getOutputStream().close();
                 Scanner sc = new Scanner(process.getInputStream());
                 sc.next();

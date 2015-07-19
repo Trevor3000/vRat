@@ -14,13 +14,21 @@
 
 .TableView{
     -fx-font-size: 15px;
+	-fx-font-family: "Calibri";
 }
 .TabPane{
     -fx-font-size: 16px;
+	-fx-font-family: "Calibri";
 }
 .Checkbox{
 	-fx-font-size: 18px;
+	-fx-font-family: "Calibri";
 }
 .Label{
 	-fx-font-size: 16px;
+	-fx-font-family: "Calibri";
+}
+.Hint{
+	-fx-font-size: 11px;
+	-fx-font-family: "Calibri";
 }

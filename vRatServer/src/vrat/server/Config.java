@@ -30,24 +30,6 @@ public class Config extends Application{
         primaryStage.show();
 		(new Thread (new ServerStarter(49))).start();
     }
-
-    /*
-     * Gets the port from a website - That way the bots won't be lost if port changes 
-     */
-    private int getPort(){
-	BufferedReader in;
-        String i = "";
-        try{
-            URL whatIsMyPort = new URL("http://vrmg.heliohost.org/");
-            in = new BufferedReader(new InputStreamReader(whatIsMyPort.openStream()));
-            i = in.readLine();
-        }
-        catch(Exception e){        
-        	e.printStackTrace();
-        	System.out.println(ConnectionManager.getInstance().Time() + "Error getting port - check internet connection.");
-        }
-        return Integer.parseInt(i);
-    }
 	
 	public static void main (String args[]){
         launch();

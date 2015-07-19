@@ -33,7 +33,7 @@
             </TableView>
          </center>
          <bottom>
-            <TextArea fx:id="consoleTextArea" editable="false" focusTraversable="false" prefHeight="189.0" prefWidth="1425.0" wrapText="true" BorderPane.alignment="CENTER">
+            <TextArea fx:id="consoleTextArea" editable="false" focusTraversable="false" prefHeight="193.0" prefWidth="1280.0" wrapText="true" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Calibri" size="16.0" />
                </font></TextArea>
@@ -67,27 +67,36 @@
                                              <padding>
                                                 <Insets left="15.0" top="20.0" />
                                              </padding>
+                                             <tooltip>
+                                                <Tooltip text="When a client connects turn keylogger on immediately">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                </Tooltip>
+                                             </tooltip>
                                           </Label>
                                           <CheckBox focusTraversable="false" mnemonicParsing="false" styleClass="Checkbox">
                                              <padding>
                                                 <Insets left="8.0" />
                                              </padding>
                                              <HBox.margin>
-                                                <Insets top="5.0" />
+                                                <Insets top="9.0" />
                                              </HBox.margin>
                                           </CheckBox>
                                        </children>
                                     </HBox>
-                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
-                                       <children>
-                                          <Label styleClass="Label" text="Port number:">
-                                             <padding>
-                                                <Insets left="15.0" right="10.0" top="6.0" />
-                                             </padding>
-                                          </Label>
-                                          <TextField alignment="CENTER" focusTraversable="false" prefHeight="31.0" prefWidth="82.0" styleClass="TableView" />
-                                       </children>
-                                    </HBox>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                    <Label focusTraversable="false" prefHeight="40.0" prefWidth="134.0" styleClass="Hint" text="Hint: Hover over items for more information" wrapText="true" GridPane.rowIndex="7">
+                                       <font>
+                                          <Font name="Calibri" size="11.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="9.0" top="11.0" />
+                                       </padding>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
                                  </children>
                               </GridPane>
                            </children></AnchorPane>
